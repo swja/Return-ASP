@@ -19,13 +19,15 @@ namespace Return_web.Vistas
         {
             if (TextBox1.Text== "Admin" && TextBox2.Text== "Admin")
             {
-                Server.Transfer("~/Vistas/Lista.aspx");
+                Response.Redirect("~/Vistas/Lista.aspx");
             }
             else
             {
+                Response.Write("<script>window.alert('Credenciales Incorrectas);</script>");
                 Label3.Visible = true;
                 TextBox1.Text = "";
                 TextBox2.Text = "";
+                
             }
         }
 
