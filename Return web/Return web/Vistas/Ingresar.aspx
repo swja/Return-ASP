@@ -89,6 +89,8 @@
     <p>
         <asp:Label ID="Label11" runat="server" Text="Fecha de registro:" Font-Size="Large"></asp:Label>
 
+        &nbsp;&nbsp;&nbsp;&nbsp;
+
         <asp:Label ID="Label13" runat="server" Font-Size="Large" Text="Fecha del calendario"></asp:Label>
 
     </p>
@@ -96,7 +98,7 @@
         &nbsp;</p>
     <p>&nbsp;</p>
     <p>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar Información" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar Información" BackColor="Black" Font-Size="Large" Font-Strikeout="False" Font-Underline="True" ForeColor="Aqua" Height="34px" Width="304px" />
     </p>
 </asp:Content>
 

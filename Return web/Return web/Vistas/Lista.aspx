@@ -48,7 +48,7 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
             </div>
-        <asp:SqlDataSource ID="llenado" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicaciónConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicaciónConnectionString.ProviderName %>" SelectCommand="SELECT        id_doc AS `#`,tipo_documento.Tipo_doc as 'Tipo de documento', Cedula, concat( Nom_doc_encon,' ', Ape_doc_encon) AS 'Nombres del documento'
+        <asp:SqlDataSource ID="llenado" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT        id_doc AS `#`,tipo_documento.Tipo_doc as 'Tipo de documento', Cedula, concat( Nom_doc_encon,' ', Ape_doc_encon) AS 'Nombres del documento'
 			, Ced_per_encon AS '#Ced quien encontro', concat(Nom_pers_encon,' ', Ape_perso_encon) as 
             'Nombres quien encontro', Nmr_contacto as 'Telefono de contacto', Email_contacto as 
             'Email de contacto', Lugar_encon as 'Lugar donde encontro', 

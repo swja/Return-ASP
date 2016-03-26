@@ -29,6 +29,11 @@ namespace Return_web.Vistas
                 if (TextBox2.Text == "" && TextBox3.Text == "" && TextBox5.Text == "" && TextBox6.Text == "" && TextBox7.Text == "")
                 {
                     Label15.Visible = true;
+                    Label3.ForeColor = System.Drawing.Color.Red;
+                    Label4.ForeColor = System.Drawing.Color.Red;
+                    Label7.ForeColor = System.Drawing.Color.Red;
+                    Label8.ForeColor = System.Drawing.Color.Red;
+                    Label9.ForeColor = System.Drawing.Color.Red;
                 }
                 else
                 {
