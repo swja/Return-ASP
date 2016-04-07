@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    
+ <!--<META HTTP-EQUIV="REFRESH" CONTENT="10; URL=Autentificacion.aspx">  PARA REDIRECCIONAR LA PAGINA DESPUES DE 10 SEG -->
 </head>
 <body>
     <form id="form1" runat="server">
@@ -15,7 +15,8 @@
     <DIV ALIGN=center> <h2>Listado de Documentos Ingresados</h2>
         <p>
         </p>
-        <asp:Image ID="Image1" runat="server" Height="93px" ImageUrl="~/Imagenes/MI.png" Width="111px" />
+        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Imagenes/MI.png" Width="122px" />
+        <br />
     </DIV>
         
     

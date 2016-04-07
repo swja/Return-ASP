@@ -4,6 +4,14 @@
 
 <html lang="es">
 <head runat="server">
+<script>
+    function novolver() {
+        if (history.forward(1)) //Si existe un valor, es decir, que se ha vuelto atrás
+        { location.replace(history.forward(1)) } //reemplaza la página actual por ese valor, es decir, 
+        //la URL desde laque volviste atrás
+}
+</script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

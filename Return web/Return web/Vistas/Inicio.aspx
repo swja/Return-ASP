@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Inicio" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Return_web._Default" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
@@ -19,10 +20,10 @@
         </div>
         <div class="col-md-4">
             <br />
-            <asp:Button ID="Ingreso" runat="server" BackColor="Black" BorderColor="Blue" BorderStyle="Inset" BorderWidth="5px" CssClass="alert" ForeColor="Lime" Height="68px" Text="Ingreso de documentos perdidos" ToolTip="Ingreso de documentos" Width="435px" Font-Size="Larger" />
+            <asp:Button ID="Ingreso" runat="server" BackColor="Black" BorderColor="Blue" BorderStyle="Inset" BorderWidth="5px" CssClass="alert" ForeColor="Lime" Height="68px" Text="Ingreso de documentos perdidos" ToolTip="Ingreso de documentos" Width="435px" Font-Size="Larger" OnClick="Ingreso_Click" />
             <br />
             <br />
-            <asp:Button ID="Ingreso0" runat="server" BackColor="Black" BorderColor="Blue" BorderStyle="Inset" BorderWidth="5px" CssClass="alert" ForeColor="Lime" Height="66px" Text="Busqueda de documentos perdidos" ToolTip="Busqueda de documentos" Width="435px" Font-Size="Larger" />
+            <asp:Button ID="Ingreso0" runat="server" BackColor="Black" BorderColor="Blue" BorderStyle="Inset" BorderWidth="5px" CssClass="alert" ForeColor="Lime" Height="66px" Text="Busqueda de documentos perdidos" ToolTip="Busqueda de documentos" Width="435px" Font-Size="Larger" OnClick="Ingreso0_Click" />
             <br />
         </div>
         <div class="col-md-4">

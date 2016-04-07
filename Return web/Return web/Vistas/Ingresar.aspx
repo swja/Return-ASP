@@ -63,7 +63,7 @@
          <asp:TextBox ID="TextBox5" runat="server" Width="177px"></asp:TextBox>
     </p>
     <p>
-        <asp:Label ID="Label8" runat="server" Text="Apellido: *" Font-Size="Large"></asp:Label>
+        <asp:Label ID="Label8" runat="server" Text="Apellidos: *" Font-Size="Large"></asp:Label>
     </p>
     <p>
           <asp:TextBox ID="TextBox6" runat="server" Width="177px"></asp:TextBox>

@@ -17,18 +17,36 @@ namespace Return_web.Vistas
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (TextBox1.Text== "Admin" && TextBox2.Text== "Admin")
+            try
             {
-                Response.Redirect("~/Vistas/Lista.aspx");
+                if (TextBox1.Text == "Admin" && TextBox2.Text == "Admin")
+                {
+                    Abrir("Lista.aspx");
+                }
+                else
+                {
+                    Response.Write("<script>window.alert('Credenciales de acceso incorrectas. ');</script>");
+                    Label3.Visible = true;
+                    TextBox1.Text = "";
+                    TextBox2.Text = "";
+                }
             }
-            else
+            
+            catch(Exception ex)
             {
-                Response.Write("<script>window.alert('Credenciales Incorrectas);</script>");
-                Label3.Visible = true;
-                TextBox1.Text = "";
-                TextBox2.Text = "";
-                
+                Response.Write("<script>window.alert('Error en la conexión, Error: \n" + ex.Message + ". ');</script>");
             }
+            
+        }
+
+        public void Abrir(string url)
+
+        {
+
+            ClientScript.RegisterStartupScript(
+
+            this.GetType(), "newWindow", String.Format("<script>window.open('{0}');</script>", url));
+
         }
 
     }

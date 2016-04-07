@@ -11,7 +11,18 @@ namespace Return_web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            String script = "<script type=text/javascript>novolver();</script>";
+            ScriptManager.RegisterStartupScript(this, GetType(), "novolver", script, false);
+        }
 
+        protected void Ingreso_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Vistas/Ingresar.aspx");  
+        }
+
+        protected void Ingreso0_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Vistas/Busca.aspx");
         }
     }
 }

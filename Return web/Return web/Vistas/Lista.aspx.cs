@@ -12,11 +12,24 @@ namespace Return_web.Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Server.Transfer("~/Vistas/Inicio.aspx");
+            Abrir("Inicio.aspx");
+            //Response.Expires = 0;
+            // Button2.Attributes.Add("onclick", "window.close();");
+            //Response.Write("<script>self.close();</script>");
+        }
+
+        public void Abrir(string url)
+
+        {
+
+            ClientScript.RegisterStartupScript(
+            this.GetType(), "newWindow", String.Format("<script>window.open('{0}');</script>", url));
+
         }
     }
+
 }
