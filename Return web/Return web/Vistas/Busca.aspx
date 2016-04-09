@@ -24,6 +24,9 @@
     
     <br />
     <asp:TextBox ID="ape" runat="server" Width="250px" placeholder="Ingrese los dos apellidos a buscar..." Height="26px"></asp:TextBox>
+    <asp:Label ID="Label4" runat="server" Text="Por favor para asegurar la busqueda despues del apellido inserte el caracter %" Font-Size="Large"></asp:Label>
+    
+    <br />
     <br />
     <br />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT DISTINCT Ape_doc_encon AS Apellidos, Nom_doc_encon AS Nombres, COUNT(*) AS 'Registros Encontrados' FROM documentos WHERE (Cedula = ?)">
@@ -53,6 +56,25 @@
         <SortedDescendingCellStyle BackColor="#D4DFE1" />
         <SortedDescendingHeaderStyle BackColor="#15524A" />
     </asp:GridView>
+        <br />
+        <asp:GridView ID="GridView2" runat="server" DataSourceID="SqlDataSource2" CellPadding="8" ForeColor="#333333"  RowStyle-VerticalAlign="Middle" GridLines="Vertical"  BorderStyle="Dashed" BorderWidth="3px" CellSpacing="2" Font-Size="Large" HorizontalAlign="Justify">
+                    <AlternatingRowStyle BackColor="White" />
+        <EditRowStyle BackColor="#7C6F57" BorderStyle="Dotted" BorderWidth="2px" Font-Size="Large" HorizontalAlign="Right" VerticalAlign="Middle" />
+        <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" />
+        <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#E3EAEB" BorderStyle="Dotted" VerticalAlign="Bottom" />
+        <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+        <SortedAscendingCellStyle BackColor="#F8FAFA" />
+        <SortedAscendingHeaderStyle BackColor="#246B61" />
+        <SortedDescendingCellStyle BackColor="#D4DFE1" />
+        <SortedDescendingHeaderStyle BackColor="#15524A" />
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT DISTINCT Ape_doc_encon AS Apellidos, Nom_doc_encon AS Nombres, COUNT(*) AS 'Registros Encontrados' FROM documentos WHERE (Ape_doc_encon LIKE ?) GROUP BY Cedula">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="ape" Name="Ape_doc_encon" PropertyName="Text" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
         </div>
     </div>
         

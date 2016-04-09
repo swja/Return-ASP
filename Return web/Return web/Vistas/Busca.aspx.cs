@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -58,6 +60,27 @@ namespace Return_web.Vistas
                 Response.Write("<script>window.alert('Error en la conexión, Error: \n" + ex.Message + ". ');</script>");
             }
             */
+            /* DataTable dt = new DataTable();
+             using (SqlConnection conn = new SqlConnection("server=localhost;database=webaplicación;user Id=root;password=root"))
+             {
+                 string query = "select distinct Ape_doc_encon as Apellidos, Nom_doc_encon as Nombres, COUNT(*) AS 'Numero de Registros Encontrados' FROM documentos where Ape_doc_encon like'"+ape.Text +"%'group by Cedula";
+
+                 SqlCommand cmd = new SqlCommand(query, conn);
+
+                 SqlDataAdapter da = new SqlDataAdapter(cmd);
+                 da.Fill(dt);
+             }
+             if (dt.Rows.Count > 0)
+             {
+                 GridView2.DataSource = dt;
+                 GridView2.DataBind();
+             }
+             else {
+                 // lblMensaje.Text = "no hay registros";
+                 Response.Write("<script>window.alert('NO hay informacion, Error: \n. ');</script>");
+             }
+             */
+          
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -66,6 +89,8 @@ namespace Return_web.Vistas
             ape.Text = "";
             GridView1.Visible = false;
         }
+
+       
     }
 }
   
