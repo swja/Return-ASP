@@ -11,8 +11,8 @@ namespace Return_web.Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //bandera(false);
 
-            
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -22,6 +22,7 @@ namespace Return_web.Vistas
                 if (TextBox1.Text == "Admin" && TextBox2.Text == "Admin")
                 {
                     Abrir("Lista.aspx");
+                    bandera(true);
                 }
                 else
                 {
@@ -42,12 +43,13 @@ namespace Return_web.Vistas
         public void Abrir(string url)
 
         {
-
             ClientScript.RegisterStartupScript(
 
             this.GetType(), "newWindow", String.Format("<script>window.open('{0}');</script>", url));
-
         }
-
+        public void bandera( bool ban)
+        {
+            ban= false;
+        }
     }
 }

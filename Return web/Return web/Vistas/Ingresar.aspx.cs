@@ -89,5 +89,15 @@ namespace Return_web.Vistas
                 Response.Write("<script>window.alert('Error en la conexión, Error: \n" + ex.Message + ". ');</script>");
             }
         }
+
+        protected void Validacion(object sender, EventArgs e)
+        {
+            /*if (!(char.IsNumber(e.)) && (e.KeyChar != (char)Keys.Back))
+            {
+                Response.Write("<script>window.alert('Por favor solo ingresar numeros. ');</script>");
+                e.Handled = true;
+                return;
+            }*/
+        }
     }
 }

@@ -2,6 +2,35 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    
+    
+
+    
+
+  
+
+    <table> 
+<tr> 
+<td><asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="Contador" Height="16px" Width="117px">
+                    <Columns>
+                        <asp:BoundField DataField="Nmr. de cedulas" HeaderText="Nmr. de cedulas" SortExpression="Nmr. de cedulas" />
+                    </Columns>
+                    </asp:GridView></td> 
+    <td><asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="Cont_licencias">
+            <Columns>
+                <asp:BoundField DataField="Nmr. de licencias" HeaderText="Nmr. de licencias" SortExpression="Nmr. de licencias" />
+            </Columns>
+        </asp:GridView>
+        </td>
+    <td>
+           <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataSourceID="cont_papeletas">
+            <Columns>
+                <asp:BoundField DataField="Nmr. papeletas de votación" HeaderText="Nmr. papeletas de votación" SortExpression="Nmr. papeletas de votación" />
+            </Columns>
+        </asp:GridView>
+    </td>
+</tr> 
+</table>
 
     <div class="jumbotron">
         <h1>Bienvenido a Return </h1>
@@ -12,7 +41,30 @@
         </p>
         </div>
     </div>
-                <h4>Por favor seleccione una de las siguientes opciones:</h4>
+                <h4>Por favor seleccione una de las siguientes opciones:
+                    
+    </h4>
+
+        
+        ddd
+        
+        ddd
+       
+   
+    <h4>
+        
+        <asp:SqlDataSource ID="Cont_licencias" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT count(*)
+ as &quot;Nmr. de licencias&quot;
+FROM            documentos
+
+where id_tipo_doc='3'"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="Contador" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT COUNT(*) AS &quot;Nmr. de cedulas&quot; FROM documentos WHERE (id_tipo_doc = '1')"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="cont_papeletas" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT count(*)
+ as &quot;Nmr. papeletas de votación&quot;
+FROM            documentos 
+
+where id_tipo_doc='3'"></asp:SqlDataSource>
+    </h4>
     <div class="row">
         <div class="col-md-4">
 

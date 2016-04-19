@@ -33,19 +33,19 @@
         <asp:Label ID="Label2" runat="server" Text="Cedula de identidad:" Font-Size="Large"></asp:Label>
     </p>
     <p>
-        <asp:TextBox ID="TextBox1" runat="server" Width="177px"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Width="177px" placeholder="Solo 10 digitos sin (-)" ToolTip="Ingrese solo 10 digitos sin (-)" TextMode="Number"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label3" runat="server" Text="Nombres del documento encontrado: *" Font-Size="Large"></asp:Label>
     </p>
     <p>
-          <asp:TextBox ID="TextBox2" runat="server" Width="177px"></asp:TextBox>
+          <asp:TextBox ID="TextBox2" runat="server" Width="177px" ValidateRequestMode="Enabled"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label4" runat="server" Text="Apellidos del documento encontrado: *" Font-Size="Large"></asp:Label>
     </p>
     <p>
-         <asp:TextBox ID="TextBox3" runat="server" Width="177px"></asp:TextBox>
+         <asp:TextBox ID="TextBox3" runat="server" Width="177px" ValidateRequestMode="Enabled"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label5" runat="server" Font-Size="Large" ForeColor="Blue" Text="Datos de la persona que encontro el documento."></asp:Label>
@@ -54,19 +54,23 @@
         <asp:Label ID="Label6" runat="server" Text="Cedula de identidad:" Font-Size="Large"></asp:Label>
     </p>
     <p>
-         <asp:TextBox ID="TextBox4" runat="server" Width="177px"></asp:TextBox>
+         <asp:TextBox ID="TextBox4" runat="server" Width="177px" placeholder="Solo 10 digitos sin (-)" ToolTip='placeholder="Solo 10 digitos sin (-)"' OnTextChanged="Validacion" TextMode="Number"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label7" runat="server" Text="Nombres: *" Font-Size="Large"></asp:Label>
     </p>
     <p>
          <asp:TextBox ID="TextBox5" runat="server" Width="177px"></asp:TextBox>
+         <asp:RequiredFieldValidator ID="Nom_doc" runat="server" ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Por favor ingrese el nombre que esta en el documento">*</asp:RequiredFieldValidator>
+         <asp:RegularExpressionValidator ID="Validacion_nom_doc" runat="server" ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Por favor ingrese el nombre que esta en el documento" ValidationExpression="\w*"></asp:RegularExpressionValidator>
     </p>
     <p>
         <asp:Label ID="Label8" runat="server" Text="Apellidos: *" Font-Size="Large"></asp:Label>
     </p>
     <p>
           <asp:TextBox ID="TextBox6" runat="server" Width="177px"></asp:TextBox>
+          <asp:RequiredFieldValidator ID="Ape_doc" runat="server" ControlToValidate="TextBox6" Display="Dynamic" ErrorMessage="Por favor ingrese el apellido que esta en el documento">*</asp:RequiredFieldValidator>
+          <asp:RegularExpressionValidator ID="Validacion_Ape_doc" runat="server" ControlToValidate="TextBox6" Display="Dynamic" ErrorMessage="Por favor ingrese el apellido que esta en el documento" ValidationExpression="\w*"></asp:RegularExpressionValidator>
     </p>
     <p>
         <asp:Label ID="Label9" runat="server" Text="Numero de contacto:  *" Font-Size="Large"></asp:Label>
@@ -78,7 +82,9 @@
         <asp:Label ID="Label10" runat="server" Text="Email de contacto:" Font-Size="Large"></asp:Label>
     </p>
     <p>
-          <asp:TextBox ID="TextBox8" runat="server" Width="177px" TextMode="Email"></asp:TextBox>
+          <asp:TextBox ID="TextBox8" runat="server" Width="177px" TextMode="Email" ValidateRequestMode="Enabled"></asp:TextBox>
+          <asp:RequiredFieldValidator ID="Correo" runat="server" ControlToValidate="TextBox8" Display="Dynamic" ErrorMessage="Formato incorrecto, Ejem: alguien@hotmail.com">*</asp:RequiredFieldValidator>
+          <asp:RegularExpressionValidator ID="Validacion_mail" runat="server" ControlToValidate="TextBox8" Display="Dynamic" ErrorMessage="Formato incorrecto, Ejem: alguien@hotmail.com" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
     </p>
     <p>
         <asp:Label ID="Label14" runat="server" Text="Lugar donde encontro el documento:" Font-Size="Large"></asp:Label>

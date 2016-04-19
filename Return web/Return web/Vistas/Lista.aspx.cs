@@ -12,14 +12,16 @@ namespace Return_web.Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
             Abrir("Inicio.aspx");
             //Response.Expires = 0;
-            // Button2.Attributes.Add("onclick", "window.close();");
-            //Response.Write("<script>self.close();</script>");
+            Button2.Attributes.Add("onclick", "window.close();");
+            Response.Write("<script>self.close();</script>");
+            Autentificacion au = new Autentificacion();
+            au.bandera(false);
         }
 
         public void Abrir(string url)
