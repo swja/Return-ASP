@@ -30,7 +30,6 @@
                     <SortedDescendingCellStyle BackColor="#FFFDF8" />
                     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
-
             </td>
             <td align="center">
                 <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="Cont_licencias" CellPadding="4" ForeColor="#333333" GridLines="None">
@@ -116,24 +115,15 @@
         </p>
     </div>
     </div>
-                <h4>Por favor seleccione una de las siguientes opciones:
-                    
-                    
+                <h4>Por favor seleccione una de las siguientes opciones:                
                     <asp:SqlDataSource ID="Cont_varios" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT count(*)
                          as 'Nmr. de documentos varios'
                         FROM            documentos
                         where id_tipo_doc='5'">
-
                     </asp:SqlDataSource>
-
                 </h4>
-
-
-    &nbsp;<h4>
-
-
+        <h4>
         <asp:SqlDataSource ID="Cont_matriculas" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT COUNT(*) AS `Nmr. de matriculas` FROM documentos WHERE (id_tipo_doc = '4')"></asp:SqlDataSource>
-
         <asp:SqlDataSource ID="Cont_licencias" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT count(*)
  as &quot;Nmr. de licencias&quot;
 FROM            documentos
@@ -148,8 +138,6 @@ where id_tipo_doc='3'"></asp:SqlDataSource>
     </h4>
     <div class="row">
         <div class="col-md-4">
-
-            <p>&nbsp;</p>
         </div>
         <div class="col-md-4">
             <br />

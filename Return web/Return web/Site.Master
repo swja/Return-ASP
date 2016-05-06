@@ -4,12 +4,20 @@
 
 <html lang="es">
 <head runat="server">
-<script>
-    function novolver() {
-        if (history.forward(1)) //Si existe un valor, es decir, que se ha vuelto atrás
-        { location.replace(history.forward(1)) } //reemplaza la página actual por ese valor, es decir, 
-        //la URL desde laque volviste atrás
-}
+  <script type="text/javascript">
+        function noBack(){
+        window.history.forward()
+        }
+        noBack();
+        window.onload= noBack;
+        window.onpageshow=
+        function(evt){ 
+        if (evt.persisted) noBack()
+        }
+        window.onunload=
+        function(){
+            void (0)
+        }
 </script>
     <%-- Para evitar la cache  --%>
     <meta http-equiv="Expires" content="0" />
@@ -63,8 +71,6 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Vistas/Ingresar.aspx">Ingreso de documentos perdidos</a></li>
-                        <li><a runat="server" href="~/Vistas/Busca.aspx">Busqueda de documentos perdidos</a></li>
                         <li><a runat="server" href="~/Vistas/Autentificacion.aspx">Registros Ingresados</a></li>
                     </ul>
                 </div>

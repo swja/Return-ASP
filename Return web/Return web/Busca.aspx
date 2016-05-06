@@ -40,7 +40,6 @@
     <asp:Button ID="Button1" runat="server" BackColor="Black" Font-Italic="True" Font-Overline="False" Font-Size="Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#CCFFFF" Text="Buscar" Width="214px" OnClick="Button1_Click" />
     &nbsp;
     <asp:Button ID="Button2" runat="server" BackColor="Black" Font-Italic="True" Font-Overline="False" Font-Size="Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#CCFFFF" Text="Nueva Busqueda" Width="214px" OnClick="Button2_Click" />
-        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Validar Documento" Visible="False" />
         <br />
         <br />
         <br />

@@ -20,12 +20,12 @@ namespace Return_web
 
         protected void Ingreso_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Vistas/Ingresar.aspx");  
+            Response.Redirect("~/Ingresar.aspx");  
         }
 
         protected void Ingreso0_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Vistas/Busca.aspx");
+            Response.Redirect("~/Busca.aspx");
         }
     }
 }

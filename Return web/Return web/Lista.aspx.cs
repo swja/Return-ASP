@@ -17,8 +17,7 @@ namespace Return_web.Vistas
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Vistas/Inicio.aspx",true);
-            Abrir("Inicio.aspx");
+            Server.Transfer("~/Inicio.aspx",true);
             Response.Expires = 0;
             Response.Write("<script>self.close();</script>");
            
