@@ -125,8 +125,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Autentificacion.aspx" />
+    <Content Include="Autentifica.aspx" />
     <Content Include="Busca.aspx" />
+    <Content Include="Imagenes\Log Ecuador.gif" />
+    <Content Include="Imagenes\logo Ecuador.gif" />
     <Content Include="Imagenes\MI.png" />
     <Content Include="Ingresar.aspx" />
     <Content Include="Inicio.aspx" />
@@ -140,9 +142,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\azuretestweb91 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\documentos-extraviados - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\documentos-extraviados - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\Returnweb - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\WebReturn - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Objetivo.aspx" />
+    <Content Include="Bienvenido.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -176,6 +182,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="Terminos.aspx" />
+    <Content Include="Uso.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -192,12 +199,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Autentificacion.aspx.cs">
-      <DependentUpon>Autentificacion.aspx</DependentUpon>
+    <Compile Include="Autentifica.aspx.cs">
+      <DependentUpon>Autentifica.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Autentificacion.aspx.designer.cs">
-      <DependentUpon>Autentificacion.aspx</DependentUpon>
+    <Compile Include="Autentifica.aspx.designer.cs">
+      <DependentUpon>Autentifica.aspx</DependentUpon>
     </Compile>
     <Compile Include="Busca.aspx.cs">
       <DependentUpon>Busca.aspx</DependentUpon>
@@ -231,6 +238,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Objetivo.aspx.cs">
+      <DependentUpon>Objetivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Objetivo.aspx.designer.cs">
+      <DependentUpon>Objetivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bienvenido.aspx.cs">
+      <DependentUpon>Bienvenido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bienvenido.aspx.designer.cs">
+      <DependentUpon>Bienvenido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -252,6 +273,13 @@
     </Compile>
     <Compile Include="Terminos.aspx.designer.cs">
       <DependentUpon>Terminos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uso.aspx.cs">
+      <DependentUpon>Uso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uso.aspx.designer.cs">
+      <DependentUpon>Uso.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

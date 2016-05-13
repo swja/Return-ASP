@@ -5,45 +5,37 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Return_web.Vistas
+namespace Return_web
 {
-    public partial class Autentificacion : System.Web.UI.Page
+    public partial class Autentifica : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*bool uno;
-            Lista lista = new Lista();
-            uno = PreviousPage.ban;
-            if(uno== true)
-            {
-                Response.Write("<script>window.alert('No se puede realizar la acción. ');</script>");
-                Abrir("Autentificacion.aspx");
-            }*/
-            
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             try
             {
-                if ( textbox3.Text == "Adminreturnwebbd" && TextBox2.Text == "Returnwebbdadmin")
+                if (TextBox3.Text == "Adminreturnwebbd" && TextBox4.Text == "Returnwebbdadmin")
                 {
-                    Abrir("Lista.aspx");
+                    Response.Redirect("~/Lista.aspx");
                 }
                 else
                 {
                     Response.Write("<script>window.alert('Credenciales de acceso incorrectas. ');</script>");
                     Label3.Visible = true;
-                    TextBox1.Text = "";
-                    TextBox2.Text = "";
+                    TextBox3.Text = "";
+                    TextBox4.Text = "";
                 }
             }
-            
-            catch(Exception ex)
+
+            catch (Exception ex)
             {
                 Response.Write("<script>window.alert('Error en la conexión, Error: \n" + ex.Message + ". ');</script>");
             }
-            
+
         }
 
         public void Abrir(string url)

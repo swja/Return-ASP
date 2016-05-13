@@ -34,7 +34,7 @@ namespace Return_web.Vistas
                     try
                     {
                         MySqlConnection myConnection = new MySqlConnection(myconx);
-                        string inserta = "INSERT INTO documentos (id_tipo_doc, Cedula, Nom_doc_encon, Ape_doc_encon, Ced_per_encon, Nom_pers_encon, Ape_perso_encon, Nmr_contacto, Email_contacto, Lugar_encon, Fecha_registro) VALUES (?tipo_doc, ?ced, ?nombres, ?apellidos, ?ced_encon, ?nom_encon, ?ape_encon, ?nmr_contac, ?mail_contac, ?lug_encon, ?fecha_reg)";
+                        string inserta = "INSERT INTO documentos (id_tipo_doc, Cedula, Nom_doc_encon, Ape_doc_encon, Ced_per_encon, Nom_pers_encon, Ape_perso_encon, Nmr_contacto, Email_contacto, Lugar_encon, Fecha_registro,comentario) VALUES (?tipo_doc, ?ced, ?nombres, ?apellidos, ?ced_encon, ?nom_encon, ?ape_encon, ?nmr_contac, ?mail_contac, ?lug_encon, ?fecha_reg, ?comen)";
                         MySqlCommand cmd = new MySqlCommand(inserta);
                         cmd.Parameters.AddWithValue("?tipo_doc", this.DropDownList1.SelectedValue);
                         cmd.Parameters.AddWithValue("?ced", this.TextBox1.Text);
@@ -47,6 +47,7 @@ namespace Return_web.Vistas
                         cmd.Parameters.AddWithValue("?mail_contac", this.TextBox8.Text);
                         cmd.Parameters.AddWithValue("?lug_encon", this.TextBox9.Text);
                         cmd.Parameters.AddWithValue("?fecha_reg", this.Label13.Text);
+                        cmd.Parameters.AddWithValue("?comen", this.TextBox10.Text);
                         cmd.Connection = myConnection;
                         myConnection.Open();
                         int res = cmd.ExecuteNonQuery();

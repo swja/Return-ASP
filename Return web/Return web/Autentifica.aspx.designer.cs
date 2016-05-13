@@ -10,7 +10,7 @@
 namespace Return_web {
     
     
-    public partial class Autentificacion {
+    public partial class Autentifica {
         
         /// <summary>
         /// Control Label1.

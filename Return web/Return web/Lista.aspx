@@ -28,7 +28,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-       <asp:Button ID="Button2" runat="server" PostBackUrl="~/Vistas/Inicio.aspx" Text="Volver a la pagina de Inicio" OnClick="Button2_Click" /> 
+       <asp:Button ID="Button2" runat="server" PostBackUrl="~/Inicio.aspx" Text="Volver a la pagina de Inicio" OnClick="Button2_Click" /> 
     <DIV ALIGN=center> <h2>Listado de Documentos Ingresados</h2>
         <p>
         </p>
@@ -66,7 +66,7 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
             </div>
-        <asp:SqlDataSource ID="llenado" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT        id_doc AS `#`,tipo_documento.Tipo_doc as 'Tipo de documento', Cedula, concat( Nom_doc_encon,' ', Ape_doc_encon) AS 'Nombres del documento'
+        <asp:SqlDataSource ID="llenado" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT id_doc AS `#`,tipo_documento.Tipo_doc as 'Tipo de documento', Cedula, concat( Nom_doc_encon,' ', Ape_doc_encon) AS 'Nombres del documento'
 			, Ced_per_encon AS '#Ced quien encontro', concat(Nom_pers_encon,' ', Ape_perso_encon) as 
             'Nombres quien encontro', Nmr_contacto as 'Telefono de contacto', Email_contacto as 
             'Email de contacto', Lugar_encon as 'Lugar donde encontro', 

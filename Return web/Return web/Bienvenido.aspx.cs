@@ -7,21 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace Return_web
 {
-    public partial class Terminos : System.Web.UI.Page
+    public partial class Presentacion : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        protected void Button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            Response.Redirect("~/Inicio.aspx");
         }
     }
 }

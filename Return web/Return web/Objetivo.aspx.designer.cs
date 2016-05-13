@@ -10,7 +10,7 @@
 namespace Return_web {
     
     
-    public partial class Terminos {
+    public partial class Objetivo {
         
         /// <summary>
         /// Control Label1.

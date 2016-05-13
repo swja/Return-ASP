@@ -19,6 +19,8 @@
             void (0)
         }
 </script>
+    <script type="text/javascript" src="js/plugins/jquery-1.7.min.js"></script>
+
     <%-- Para evitar la cache  --%>
     <meta http-equiv="Expires" content="0" />
     <meta http-equiv="Pragma" content="no-cache" />
@@ -58,7 +60,6 @@
                 <%--Scripts del sitio--%>
             </Scripts>
         </asp:ScriptManager>
-
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -67,21 +68,28 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~//Vistas/Inicio.aspx">Return</a>
+                    <a class="navbar-brand" runat="server" href="~/Inicio.aspx">Inicio</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Vistas/Autentificacion.aspx">Registros Ingresados</a></li>
+                        <li><a runat="server" href="~/Objetivo.aspx">Objetivo</a></li>
+                        <li><a runat="server" href="~/Uso.aspx">¿Cómo se usa?</a></li>                        
+                        <li><a runat="server" href="~/Terminos.aspx">Términos y Condiciones</a></li>
+                        <%--<li><a runat="server" href="~/Autentifica.aspx">Registros Ingresados</a></li> --%>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <p>                      
+                    </p>
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
+                <asp:Image ID="Image1" runat="server" Height="140px" ImageAlign="Right" ImageUrl="~/Imagenes/Log Ecuador.gif" Width="114px" />        
                 <p>&copy; <%: DateTime.Now.Year %> - Return. Todos los derechos reservados.</p>
+
             </footer>
         </div>
 
