@@ -24,7 +24,7 @@ where id_tipo_doc='3'"></asp:SqlDataSource>
         <div id="contador" align="right">
     <div id="boton" align="center">
             <br />
-            <asp:Button ID="Ingreso" runat="server" Text="Ingreso de documentos." ToolTip="Ingreso de documentos" OnClick="Ingreso_Click" Font-Size="Large" Height="44px" Width="276px"/>
+            <asp:Button ID="Ingreso" runat="server" Text="Ingreso de documentos." ToolTip="Ingreso de documentos" OnClick="Ingreso_Click" Font-Size="Large" Height="44px" Width="277px"/>
             <br />
             <br />
             <asp:Button ID="Ingreso0" runat="server" Text="Búsqueda de documentos." ToolTip="Busqueda de documentos" OnClick="Ingreso0_Click" Font-Strikeout="False" Height="36px" Width="275px" Font-Size="Large"/>
