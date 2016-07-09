@@ -1,11 +1,10 @@
-﻿<%@ Page Title="Bienvenido" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Bienvenido.aspx.cs" Inherits="Return_web.Presentacion" %>
-
+﻿<%@ Page Title="Bienvenido" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Return_web.Defaultt" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="jumbotron" align="center">
+        <div class="jumbotron" align="center">
         <h1>BIENVENIDO A RETURN </h1>
         <p class="lead">Recuperación de documentos extraviados</p>
         <div align="center">
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/MI.png" Width="307px" Height="205px" />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/Logo Return.png" Width="307px" Height="205px" />
             <br />
             <p style="language: es; line-height: 90%; margin-top: 10.0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; text-align: center; direction: ltr; unicode-bidi: embed; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging">
                 <span style="font-size: 17.0pt; font-family: Calibri; mso-ascii-font-family: Calibri; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 1; mso-font-kerning: 12.0pt; language: es; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: text1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%">La web que facilita la búsqueda y recuperación de los distintos documentos personales extraviados.</span>
@@ -13,8 +12,8 @@
             <p style="language: es; line-height: 90%; margin-top: 10.0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; text-align: center; direction: ltr; unicode-bidi: embed; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging">
                 &nbsp;
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" href="~/Inicio.aspx" data-target="#myModal">
-                Ingresar
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" href="~/Ini.aspx" data-target="#myModal">
+                INGRESAR
             </button>
 
             <!-- Modal -->

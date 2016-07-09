@@ -32,7 +32,7 @@
     <DIV ALIGN=center> <h2>Listado de Documentos Ingresados</h2>
         <p>
         </p>
-        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Imagenes/MI.png" Width="122px" />
+        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Imagenes/Logo Return.png" Width="122px" />
         <br />
     </DIV>
         
@@ -40,7 +40,7 @@
     </div>
 
         <div align=center>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="#" DataSourceID="llenado" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="#" DataSourceID="llenado" ForeColor="#333333" GridLines="None" PageSize="20">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:BoundField DataField="#" HeaderText="#" InsertVisible="False" ReadOnly="True" SortExpression="#" />
@@ -53,6 +53,7 @@
                 <asp:BoundField DataField="Email de contacto" HeaderText="Email de contacto" SortExpression="Email de contacto" />
                 <asp:BoundField DataField="Lugar donde encontro" HeaderText="Lugar donde encontro" SortExpression="Lugar donde encontro" />
                 <asp:BoundField DataField="Fecha de registro en el sistema" HeaderText="Fecha de registro en el sistema" SortExpression="Fecha de registro en el sistema" />
+                <asp:BoundField DataField="Comentario" HeaderText="Comentario" SortExpression="Comentario" />
             </Columns>
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -69,7 +70,7 @@
         <asp:SqlDataSource ID="llenado" runat="server" ConnectionString="<%$ ConnectionStrings:webaplicación1ConnectionString %>" ProviderName="<%$ ConnectionStrings:webaplicación1ConnectionString.ProviderName %>" SelectCommand="SELECT id_doc AS `#`,tipo_documento.Tipo_doc as 'Tipo de documento', Cedula, concat( Nom_doc_encon,' ', Ape_doc_encon) AS 'Nombres del documento'
 			, Ced_per_encon AS '#Ced quien encontro', concat(Nom_pers_encon,' ', Ape_perso_encon) as 
             'Nombres quien encontro', Nmr_contacto as 'Telefono de contacto', Email_contacto as 
-            'Email de contacto', Lugar_encon as 'Lugar donde encontro', 
+            'Email de contacto', Lugar_encon as 'Lugar donde encontro', comentario as 'Comentario' ,
 			 Fecha_registro as 'Fecha de registro en el sistema'
 
 FROM            documentos

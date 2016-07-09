@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>
         <div align="center">
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/MI.png" Height="96px" Width="171px" />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/Logo Return.png" Height="96px" Width="171px" />
         </div>
     </h2>
     <h2>Ingreso de documentos extraviados.</h2>
@@ -73,7 +73,7 @@
         <asp:Label ID="Label9" runat="server" Text="Número de contacto:  *" Font-Size="Large"></asp:Label>
     </p>
     <p>
-        <asp:TextBox ID="TextBox7" runat="server" Width="177px" TextMode="Number"></asp:TextBox>
+        <asp:TextBox ID="TextBox7" runat="server" Width="177px"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label10" runat="server" Text="Email de contacto:" Font-Size="Large"></asp:Label>
@@ -82,7 +82,7 @@
         <asp:TextBox ID="TextBox8" runat="server" Width="177px" TextMode="Email"></asp:TextBox>
     </p>
     <p>
-        <asp:Label ID="Label14" runat="server" Text="Lugar donde encontró el documento:" Font-Size="Large"></asp:Label>
+        <asp:Label ID="Label14" runat="server" Text="Ciudad dónde encontró el documento:" Font-Size="Large"></asp:Label>
     </p>
     <p>
         <asp:TextBox ID="TextBox9" runat="server" Width="177px"></asp:TextBox>
@@ -92,7 +92,7 @@
 
     </p>
     <p>
-        <asp:TextBox ID="TextBox10" runat="server" Height="68px" placeholder="Si selecciono como tipo de documento Varios, por favor especifique en esta sección que tipo de documento es" TextMode="MultiLine" Width="295px"></asp:TextBox>
+        <asp:TextBox ID="TextBox10" runat="server" Height="125px" placeholder="Si selecciono como tipo de documento Varios, por favor especifique en esta sección que tipo de documento es o especifique la ubicación exacta donde encontro el documento. Ej. Hospital Vaca Ortiz" TextMode="MultiLine" Width="343px"></asp:TextBox>
 
     </p>
     <p>
@@ -108,7 +108,7 @@
     </p>
     <p>&nbsp;</p>
     <p>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar Información" BackColor="Black" Font-Size="Large" Font-Strikeout="False" Font-Underline="True" ForeColor="Aqua" Height="34px" Width="304px" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Ingresar Información" Height="34px" Width="304px" />
     </p>
 </asp:Content>
 

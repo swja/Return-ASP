@@ -5,10 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 namespace Return_web
 {
-    public partial class _Default : Page
+    public partial class Ini : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,12 +19,16 @@ namespace Return_web
 
         protected void Ingreso_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Ingresar.aspx");  
+            Response.Redirect("~/Ingresar.aspx");
         }
 
         protected void Ingreso0_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Busca.aspx");
+        }
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Bienvenido.aspx");
         }
     }
 }

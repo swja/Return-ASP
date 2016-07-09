@@ -73,7 +73,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/Objetivo.aspx">Objetivo</a></li>
-                        <li><a runat="server" href="~/Uso.aspx">¿Cómo se usa?</a></li>                        
+                        <li><a runat="server" href="~/Uso.aspx">¿Cómo se usa?</a></li>  
+                        <li><a runat="server" href="~/Para_que_sirve.aspx">¿Para qué sirve? </a></li>                
                         <li><a runat="server" href="~/Terminos.aspx">Términos y Condiciones</a></li>
                         <%--<li><a runat="server" href="~/Autentifica.aspx">Registros Ingresados</a></li> --%>
                     </ul>

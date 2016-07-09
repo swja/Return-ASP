@@ -5,20 +5,20 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div align="center">
         <br />
-        <img alt="Logo" src="../Imagenes/MI.png" style="width: 171px; height: 96px" />
+        <img alt="Logo" src="Imagenes/Logo%20Return.png" style="width: 171px; height: 96px" />
     </div>
     <h2>Búsqueda de documentos extraviados</h2>
     <p>&nbsp;</p>
     &nbsp;<asp:Label ID="Label2" runat="server" Text="Por favor según el tipo de búsqueda que desee realizar, ingrese la información requerida." Font-Size="Large"></asp:Label>
     <br />
     <br />
-    <asp:Label ID="Label1" runat="server" Text="Búsqueda por Cedula de Identidad " Font-Size="Large"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="Búsqueda por cédula de identidad " Font-Size="Large"></asp:Label>
     <br />
     <asp:TextBox ID="ced" runat="server" Width="247px" placeholder="Ingrese el número de cedula..." Height="29px"></asp:TextBox>
     <asp:Label ID="Label4" runat="server" Font-Size="Large" ForeColor="Red" Text="Por favor ingrese un criterio de búsqueda" Visible="False"></asp:Label>
     <br />
     <br />
-    <asp:Label ID="Label3" runat="server" Text="Búsqueda por Apellidos" Font-Size="Large"></asp:Label>
+    <asp:Label ID="Label3" runat="server" Text="Búsqueda por Apellido" Font-Size="Large"></asp:Label>
     <br />
     <asp:TextBox ID="ape" runat="server" Width="250px" placeholder="Ingrese el apellido a buscar..." Height="26px" OnTextChanged="cambio_busca"></asp:TextBox>
     <asp:Label ID="Label5" runat="server" Font-Size="Large" ForeColor="Red" Text="Por favor ingrese un criterio de búsqueda" Visible="False"></asp:Label>
@@ -39,9 +39,9 @@
     <br />
     <br />
     <div align="center">
-        <asp:Button ID="Button1" runat="server" BackColor="Black" Font-Italic="True" Font-Overline="False" Font-Size="Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#CCFFFF" Text="Buscar" Width="214px" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" Text="Buscar" Width="214px" OnClick="Button1_Click" />
         &nbsp;
-    <asp:Button ID="Button2" runat="server" BackColor="Black" Font-Italic="True" Font-Overline="False" Font-Size="Large" Font-Strikeout="False" Font-Underline="True" ForeColor="#CCFFFF" Text="Nueva Búsqueda" Width="214px" OnClick="Button2_Click" />
+    <asp:Button ID="Button2" runat="server" Text="Nueva Búsqueda" Width="214px" OnClick="Button2_Click" />
         <br />
         <br />
         <asp:Label ID="Label6" runat="server" Font-Size="Medium" Font-Underline="True" ForeColor="Blue" Text="Nota. - Si ningún elemento es mostrado al realizar su búsqueda, NO existe ningún registro que coincida con la misma." Visible="False"></asp:Label>
@@ -112,6 +112,5 @@
     </div>
     <br />
     <br />
-    </div>
     <br />
 </asp:Content>
