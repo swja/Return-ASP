@@ -10,9 +10,9 @@
                 </h4>
     <h4>
         <asp:SqlDataSource ID="Cont_matriculas" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT COUNT(*) AS `Nmr. de matriculas` FROM documentos WHERE (id_tipo_doc = '4')"></asp:SqlDataSource>
-        <asp:SqlDataSource ID="Cont_licencias" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT count(*) as &quot;Nmr. de licencias&quot; FROM  documentos where id_tipo_doc='3'"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="Cont_licencias" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT count(*) as &quot;Nmr. de licencias&quot; FROM  documentos where id_tipo_doc='2'"></asp:SqlDataSource>
         <asp:SqlDataSource ID="Contador" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT COUNT(*) AS &quot;Nmr. de cedulas&quot; FROM documentos WHERE (id_tipo_doc = '1')"></asp:SqlDataSource>
-        <asp:SqlDataSource ID="cont_papeletas" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT count(*) as &quot;Nmr. papeletas de votación&quot; FROM   documentos where id_tipo_doc='2'"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="cont_papeletas" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT count(*) as &quot;Nmr. papeletas de votación&quot; FROM   documentos where id_tipo_doc='3'"></asp:SqlDataSource>
         <div id="contador" align="center">
     <div id="boton" align="center">
         <br />
@@ -64,7 +64,7 @@
                  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="Contador" Height="16px" Width="133px" CellPadding="4" ForeColor="#333333" GridLines="None">
                      <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                      <Columns>
-                         <asp:BoundField DataField="Nmr. de cedulas" HeaderText="Nmr. de cedulas" SortExpression="Nmr. de cedulas" />
+                         <asp:BoundField DataField="Nmr. de cedulas" HeaderText="Nmr. de Cédulas" SortExpression="Nmr. de cedulas" />
                      </Columns>
                      <EditRowStyle BackColor="#999999" />
                      <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -82,7 +82,7 @@
                  <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="Cont_licencias" CellPadding="4" ForeColor="#333333" GridLines="None" Width="123px">
                      <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                      <Columns>
-                         <asp:BoundField DataField="Nmr. de licencias" HeaderText="Nmr. de licencias" SortExpression="Nmr. de licencias" />
+                         <asp:BoundField DataField="Nmr. de licencias" HeaderText="Nmr. de Lícencias" SortExpression="Nmr. de licencias" />
                      </Columns>
                      <EditRowStyle BackColor="#999999" />
                      <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -100,7 +100,7 @@
                  <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" DataSourceID="cont_papeletas" CellPadding="4" ForeColor="#333333" GridLines="None" Width="197px">
                      <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                      <Columns>
-                         <asp:BoundField DataField="Nmr. papeletas de votación" HeaderText="Nmr. papeletas de votación" SortExpression="Nmr. papeletas de votación" />
+                         <asp:BoundField DataField="Nmr. papeletas de votación" HeaderText="Nmr. Papeletas de Votación" SortExpression="Nmr. papeletas de votación" />
                      </Columns>
                      <EditRowStyle BackColor="#999999" />
                      <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -118,7 +118,7 @@
                  <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" DataSourceID="Cont_matriculas" CellPadding="4" ForeColor="#333333" GridLines="None" Width="137px">
                      <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                      <Columns>
-                         <asp:BoundField DataField="Nmr. de matriculas" HeaderText="Nmr. de matriculas" SortExpression="Nmr. de matriculas" />
+                         <asp:BoundField DataField="Nmr. de matriculas" HeaderText="Nmr. de Matrículas" SortExpression="Nmr. de matriculas" />
                      </Columns>
                      <EditRowStyle BackColor="#999999" />
                      <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -136,7 +136,7 @@
                  <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False" DataSourceID="Cont_varios" CellPadding="4" ForeColor="#333333" GridLines="None" Width="198px">
                      <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                      <Columns>
-                         <asp:BoundField DataField="Nmr. de documentos varios" HeaderText="Nmr. de documentos varios" SortExpression="Nmr. de documentos varios" />
+                         <asp:BoundField DataField="Nmr. de documentos varios" HeaderText="Nmr. de Documentos Varios" SortExpression="Nmr. de documentos varios" />
                      </Columns>
                      <EditRowStyle BackColor="#999999" />
                      <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

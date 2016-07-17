@@ -4,7 +4,7 @@
     <p>
         <br />
         <div align="center">
-        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large"  Height="25px" Text="¿Para qué sirve? "></asp:Label>   
+        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large"  Height="25px" Text="¿PARA QUÉ SIRVE? "></asp:Label>   
         <br />
             <br />
     </div>           

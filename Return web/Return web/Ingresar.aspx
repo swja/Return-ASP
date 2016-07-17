@@ -8,7 +8,7 @@
     </h2>
     <h2>Ingreso de documentos extraviados.</h2>
     <h3>
-        <p>Por favor ingrese la siguiente informacion y no deje vacios los campos con *:</p>
+        <p>Por favor ingrese la siguiente información y no deje vacios los campos con *:</p>
         <asp:Label ID="Label15" runat="server" Font-Size="Large" ForeColor="Red" Text="Por favor verifique que todos los campos con * estén llenos." Visible="False"></asp:Label>
     </h3>
     <p>
@@ -22,16 +22,16 @@
     <p>
 
         <asp:DropDownList ID="DropDownList1" runat="server" Font-Size="Large" Width="189px">
-            <asp:ListItem Value="1">Cedula de identidad</asp:ListItem>
-            <asp:ListItem Value="2">Licencia de conducir</asp:ListItem>
+            <asp:ListItem Value="1">Cédula de identidad</asp:ListItem>
+            <asp:ListItem Value="2">Lícencia de conducir</asp:ListItem>
             <asp:ListItem Value="3">Papeleta de votación</asp:ListItem>
-            <asp:ListItem Value="4">Matricula</asp:ListItem>
+            <asp:ListItem Value="4">Matricula vehicular</asp:ListItem>
             <asp:ListItem Value="5">Varios</asp:ListItem>
         </asp:DropDownList>
 
     </p>
     <p>
-        <asp:Label ID="Label2" runat="server" Text="Cedula de identidad:" Font-Size="Large"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Cédula de identidad:" Font-Size="Large"></asp:Label>
     </p>
     <p>
         <asp:TextBox ID="TextBox1" runat="server" Width="177px" placeholder="Solo 10 dígitos sin (-)" ToolTip="Ingrese solo 10 dígitos sin (-)"></asp:TextBox>
@@ -52,7 +52,7 @@
         <asp:Label ID="Label5" runat="server" Font-Size="Large" ForeColor="Blue" Text="Datos de la persona que encontró el documento."></asp:Label>
     </p>
     <p>
-        <asp:Label ID="Label6" runat="server" Text="Cedula de identidad:" Font-Size="Large"></asp:Label>
+        <asp:Label ID="Label6" runat="server" Text="Cédula de identidad:" Font-Size="Large"></asp:Label>
     </p>
     <p>
         <asp:TextBox ID="TextBox4" runat="server" Width="177px" placeholder="Solo 10 dígitos sin (-)" ToolTip='placeholder="Solo 10 dígitos sin (-)"'></asp:TextBox>
@@ -77,13 +77,13 @@
     </p>
     <p>
         <asp:Label ID="Label10" runat="server" Text="Email de contacto:" Font-Size="Large"></asp:Label>
-    </p>
+        *</p>
     <p>
         <asp:TextBox ID="TextBox8" runat="server" Width="177px" TextMode="Email"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label14" runat="server" Text="Ciudad dónde encontró el documento:" Font-Size="Large"></asp:Label>
-    </p>
+        *</p>
     <p>
         <asp:TextBox ID="TextBox9" runat="server" Width="177px"></asp:TextBox>
     </p>

@@ -28,7 +28,7 @@ namespace Return_web
         }
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Bienvenido.aspx");
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

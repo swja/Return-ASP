@@ -25,7 +25,7 @@
     <br />
     <br />
     <br />
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT tipo_documento.Tipo_doc as 'Tipo de documento', Cedula, concat( Nom_doc_encon,' ', Ape_doc_encon) AS 'Nombres del documento'
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:consultaBuscar %>" ProviderName="<%$ ConnectionStrings:consultaBuscar.ProviderName %>" SelectCommand="SELECT tipo_documento.tipo_documento as 'Tipo de documento', Cedula, concat( Nom_doc_encon,' ', Ape_doc_encon) AS 'Nombres del documento'
 			, concat(Nom_pers_encon,' ', Ape_perso_encon) as 
             'Nombres quien encontró', Nmr_contacto as 'Teléfono  de contacto', Email_contacto as 
             'Email de contacto', comentario as 'Comentario'

@@ -68,7 +68,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/Inicio.aspx">Inicio</a>
+                    <a class="navbar-brand" runat="server" href="~/Inicio.aspx">INICIO</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -87,12 +87,12 @@
                     </p>
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <asp:Image ID="Image1" runat="server" Height="140px" ImageAlign="Right" ImageUrl="~/Imagenes/Log Ecuador.gif" Width="114px" />        
+                   </div>
+            <footer align="center">
+                <h3><p><font color="#D7DF01">Producto</font> <font color="blue">100%</font> <font color="red">Ecuatoriano</font></p></h3>    
                 <p>&copy; <%: DateTime.Now.Year %> - Return. Todos los derechos reservados.</p>
-
             </footer>
-        </div>
+ 
 
     </form>
 </body>

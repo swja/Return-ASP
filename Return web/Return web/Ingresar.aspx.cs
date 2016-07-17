@@ -5,7 +5,7 @@ namespace Return_web.Vistas
 {
     public partial class Ingresar : System.Web.UI.Page
     {
-        MySqlConnection san = new MySqlConnection("Database=webaplicacion;Data Source=us-cdbr-azure-east-c.cloudapp.net;User Id=bc4752dbdec2da;Password=cea9c4cb");
+        MySqlConnection san = new MySqlConnection("Server=MYSQL5013.Smarterasp.net;Database=db_a094ae_docext;Uid=a094ae_docext;Pwd=d0cum3nt0s!X;");
         protected void Page_Load(object sender, EventArgs e)
         {
             Label13.Text = System.DateTime.Now.ToString();
@@ -18,7 +18,7 @@ namespace Return_web.Vistas
                 string myconx = "";
                 if (myconx == "")
                 {
-                    myconx = "Database=webaplicacion;Data Source=us-cdbr-azure-east-c.cloudapp.net;User Id=bc4752dbdec2da;Password=cea9c4cb";
+                    myconx = "Server=MYSQL5013.Smarterasp.net;Database=db_a094ae_docext;Uid=a094ae_docext;Pwd=d0cum3nt0s!X;";
                 }
                 if (TextBox2.Text == "" && TextBox3.Text == "" && TextBox5.Text == "" && TextBox6.Text == "" && TextBox7.Text == "")
                 {

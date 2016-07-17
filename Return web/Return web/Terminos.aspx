@@ -4,7 +4,7 @@
 	<p>
         <br />
 		<div align="center">
-		<asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large"  Height="25px" Text="Términos y Condiciones de uso de Return"></asp:Label>   
+		<asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large"  Height="25px" Text="TÉRMINOS Y CONDICIONES DE USO DE RETURN"></asp:Label>   
 		<br />
 			<br />
 	</div>           
